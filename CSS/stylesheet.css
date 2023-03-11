@@ -1,0 +1,26 @@
+.header-container {
+    display: flex;
+    border: 2px solid blue;
+}
+.header-container ul {
+    list-style: none;
+}
+
+#img-conatiner {
+    width: 40%;
+    border: 1px solid black;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#intro-container {
+    border: 1px solid black;
+}
+#contact-container {
+    width: 40%;
+    border: 1px solid black;
+}
+#deco2-container {
+    border: 1px solid black;
+}
