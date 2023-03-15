@@ -16,8 +16,6 @@ ul {
 
 #img-conatiner {
   width: 18%;
-  border: 1px solid black;
-  
 }
 .image-cropper {
   width: 150px;
@@ -25,6 +23,8 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  top: 30px;
+  
 }
 .profile-pic {
 display: inline;
@@ -36,14 +36,11 @@ width: auto;
 
 #intro-container {
   width: 65%;
-  border: 1px solid black;
 }
 #contact-container {
   width: 18%;
-  border: 1px solid black;
 }
 main {
-  border: 2px solid lime;
   padding: 40px 20px ;
 }
 #education {
@@ -84,11 +81,11 @@ main {
 }
 #edu-info-section1 {
   margin-top: 6px;
+  margin-bottom: 80px;
+  border: 3px solid blue;
   border: 3px solid blue;
 }
 #edu-info-section2 {
-  position: relative;
-  top: 90px;
   border: 3px solid purple;
 }
 #volunteerExp {
@@ -112,7 +109,7 @@ main {
   border: 2px solid black;
   width: 45%;
 }
-#skills {
+#skill {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -144,5 +141,38 @@ main {
 #skills-info-section3 {
   
   width: 100%;
+  border: 3px solid purple;
+}
+#reference {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+}
+
+#ref-title {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid black;
+  width: 45%;
+}
+#ref-title h2 {
+  position: relative;
+  top:-30px;
+}
+#ref-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid black;
+  width: 45%;
+}
+#ref-info-section1 {
+  margin-bottom: 50px;
+  border: 3px solid blue;
+}
+#ref-info-section2 {
   border: 3px solid purple;
 }
