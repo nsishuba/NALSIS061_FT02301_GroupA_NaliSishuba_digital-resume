@@ -1,14 +1,15 @@
 body {
   height: 100vh;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .header-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
-  background: #FBEAFF;
+  background: #fbeaff;
 }
 ul {
   list-style: none;
@@ -24,14 +25,13 @@ ul {
   overflow: hidden;
   border-radius: 50%;
   top: 30px;
-  
 }
 .profile-pic {
-display: inline;
-margin: 0 auto;
-margin-left: -40%; /*  centers the image */
-height: 100%;
-width: auto;
+  display: inline;
+  margin: 0 auto;
+  margin-left: -40%; /*  centers the image */
+  height: 100%;
+  width: auto;
 }
 
 #intro-container {
@@ -41,14 +41,15 @@ width: auto;
   width: 18%;
 }
 main {
-  padding: 40px 20px ;
+  padding: 40px 20px;
 }
+
 #education {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width:100%;
+  width: 100%;
 }
 
 #edu-title {
@@ -70,7 +71,7 @@ main {
 }
 #edu-title h2 {
   position: relative;
-  top:-30px;
+  top: -30px;
 }
 #edu-info {
   display: flex;
@@ -139,7 +140,6 @@ main {
   border: 3px solid purple;
 }
 #skills-info-section3 {
-  
   width: 100%;
   border: 3px solid purple;
 }
@@ -148,7 +148,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width:100%;
+  width: 100%;
 }
 
 #ref-title {
@@ -160,7 +160,7 @@ main {
 }
 #ref-title h2 {
   position: relative;
-  top:-30px;
+  top: -30px;
 }
 #ref-info {
   display: flex;
@@ -175,4 +175,23 @@ main {
 }
 #ref-info-section2 {
   border: 3px solid purple;
+}
+#bubble1 {
+  border-radius: 50%;
+  background-color: #fbeaff;
+  opacity: 50%;
+  width: 30%;
+  height: 60%;
+  position: absolute;
+  bottom: -25%;
+  left: -10%;
+}
+#bubble2 {
+  border-radius: 50%;
+  background-color: #fbeaff;
+  opacity: 50%;
+  width: 60%;
+  height: 120%;
+  position: absolute;
+  right: -55px;
 }
