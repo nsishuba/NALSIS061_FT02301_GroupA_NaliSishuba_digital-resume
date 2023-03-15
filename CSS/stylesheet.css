@@ -2,12 +2,13 @@ body {
   height: 100vh;
   margin: 0px;
 }
+
 .header-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
   justify-content: center;
-  border: 2px solid blue;
+  background: #FBEAFF;
 }
 .header-container ul {
   list-style: none;
@@ -18,9 +19,21 @@ body {
   border: 1px solid black;
   
 }
-img {
- width: 190px;
+.image-cropper {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
+.profile-pic {
+display: inline;
+margin: 0 auto;
+margin-left: -40%; /*  centers the image */
+height: 100%;
+width: auto;
+}
+
 #intro-container {
   width: 65%;
   border: 1px solid black;
@@ -29,4 +42,52 @@ img {
   width: 18%;
   border: 1px solid black;
 }
+main {
+  border: 2px solid lime;
+  padding: 40px 20px ;
+}
+#education {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+}
 
+#edu-title {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid black;
+  width: 45%;
+}
+#edu-title-section1 {
+  position: relative;
+  top: -55px;
+  margin-bottom: 35px;
+  border: 3px solid blue;
+}
+#edu-title-section2 {
+  margin-bottom: 35px;
+  border: 3px solid purple;
+}
+#edu-title h2 {
+  position: relative;
+  top:-30px;
+}
+#edu-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid black;
+  width: 45%;
+}
+#edu-info-section1 {
+  margin-top: 6px;
+  border: 3px solid blue;
+}
+#edu-info-section2 {
+  position: relative;
+  top: 90px;
+  border: 3px solid purple;
+}
