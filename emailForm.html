@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formStylesheet.css" />
+    <title>Email Form</title>
+</head>
+<body>
+    
+        <div id="emailForm">
+       
+            <form action="https://formsubmit.co/130aa2822e69bb783a1add909dd22f48" method="POST">
+            <div id="email-box">
+              <label>Email</label>
+            <input id="emailAddress" type="email" name="email" placeholder="your email" required ><br />
+          </div>
+            <div id="subject-box">
+              <label>Subject</label>
+            <select name="_subject" id="subject" required>
+              <option value="">None</option>
+              <option value="interview">Interview Opportunity</option>
+              <option value="recruiter">Recruiter</option>
+              <option value="feedback">Resume Feedback</option>
+            </select><br />
+          </div>
+            
+            <textarea name="message" id="message-box" cols="50" rows="5" placeholder="Please enter message here(optional)..."></textarea>
+            <br/>
+            <input type="submit" value="Submit" id="submit-btn">
+       </div>
+  
+    
+</body>
+</html>

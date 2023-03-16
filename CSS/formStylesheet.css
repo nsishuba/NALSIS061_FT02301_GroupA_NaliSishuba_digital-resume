@@ -1,0 +1,23 @@
+body {
+    background: #fbeaff;
+    font-size: 20pt;
+}
+#emailForm {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width:40%;
+}
+
+#email-box input {
+    width: 50%;
+    padding: 5px 10px;
+}
+#subject-box select {
+    width: 50%;
+    padding: 5px 10px;
+}
+#message-box {
+    width: 90%;
+    height: 100%;
+}
