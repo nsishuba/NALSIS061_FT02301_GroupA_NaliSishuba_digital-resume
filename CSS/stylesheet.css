@@ -2,6 +2,8 @@ body {
   height: 100vh;
   margin: 0px;
   overflow-x: hidden;
+  font-size: 14pt;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .header-container {
@@ -15,8 +17,8 @@ ul {
   list-style: none;
 }
 
-#img-conatiner {
-  width: 18%;
+#img-container {
+  width: 15%;
 }
 .image-cropper {
   width: 150px;
@@ -35,146 +37,130 @@ ul {
 }
 
 #intro-container {
-  width: 65%;
+  padding-right: 30px;
+  width: 60%;
 }
 #contact-container {
-  width: 18%;
+  width: 20%;
 }
 main {
   padding: 40px 20px;
 }
-
-#education {
+.education {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
-#edu-title {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: 2px solid black;
+.edu-title {
+  flex-wrap: wrap;
   width: 45%;
 }
 #edu-title-section1 {
   position: relative;
   top: -55px;
-  margin-bottom: 35px;
-  border: 3px solid blue;
+}
+#edu-info-section1 {
+  flex-wrap: wrap;
+  padding: 5px;
+  position: relative;
+  right: -42px;
+  width: 45%;
 }
 #edu-title-section2 {
-  margin-bottom: 35px;
-  border: 3px solid purple;
+  position: relative;
+  top: -25px;
 }
-#edu-title h2 {
+
+#edu-info-section2 {
+  flex-wrap: wrap;
+  padding: 5px;
+  position: relative;
+  top: -25px;
+  right: -42px;
+  width: 45%;
+}
+
+.left-title {
   position: relative;
   top: -30px;
 }
-#edu-info {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: 2px solid black;
-  width: 45%;
-}
-#edu-info-section1 {
-  margin-top: 6px;
-  margin-bottom: 80px;
-  border: 3px solid blue;
-  border: 3px solid blue;
-}
-#edu-info-section2 {
-  border: 3px solid purple;
-}
 #volunteerExp {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-top: 5%;
 }
 #vol-title {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: 2px solid black;
+  flex-wrap: wrap;
   width: 45%;
+}
+#vol-title-section1 {
+  position: relative;
+  top: -55px;
 }
 #vol-info {
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 5px;
-  border: 2px solid black;
   width: 45%;
 }
+
 #skill {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-top: 5%;
+  position: relative;
+  z-index: 1;
 }
 #skills-title {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: 2px solid black;
   width: 45%;
 }
 #skills-info {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 5px;
-  border: 2px solid black;
+  justify-content: space-between;
   width: 45%;
 }
-#skills-info-section1 {
-  width: 100%;
-  border: 3px solid blue;
-}
 #skills-info-section2 {
-  width: 100%;
-  border: 3px solid purple;
+  padding-top: 45px;
+}
+#skills-info2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -22%;
+  width: 45%;
 }
 #skills-info-section3 {
   width: 100%;
-  border: 3px solid purple;
 }
 #reference {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  margin-top: 5%;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 #ref-title {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: 2px solid black;
   width: 45%;
 }
-#ref-title h2 {
-  position: relative;
-  top: -30px;
-}
+
 #ref-info {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: 2px solid black;
   width: 45%;
 }
 #ref-info-section1 {
   margin-bottom: 50px;
-  border: 3px solid blue;
+  padding-left: 30px;
 }
 #ref-info-section2 {
-  border: 3px solid purple;
+  padding-left: 30px;
 }
 #bubble1 {
   border-radius: 50%;
@@ -194,4 +180,129 @@ main {
   height: 120%;
   position: absolute;
   right: -55px;
+}
+
+@media only screen and (max-width: 992px) {
+  #img-container {
+    width: 45%;
+  }
+  #intro-container {
+    width: 45%;
+  }
+  #contact-container {
+    position: relative;
+    right: -24%;
+    width: 50%;
+  }
+  #bubble1 {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    bottom: 25%;
+    left: -10%;
+  }
+  #bubble2 {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    bottom: -70%;
+    right: -20%;
+  }
+  .education {
+    position: relative;
+    left: 10%;
+    width: 80%;
+  }
+  
+  #volunteerExp {
+    position: relative;
+    left: 10%;
+    width: 80%;
+  }
+  #skill {
+    position: relative;
+    left: 10%;
+    width: 80%;
+  }
+  #reference {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #img-container {
+    width: 100%;
+  }
+  #intro-container {
+    width: 100%;
+  }
+  #contact-container {
+    position: relative;
+    right: 0%;
+    width: 100%;
+  }
+  #bubble1 {
+    width: 60%;
+    height: 25%;
+    position: absolute;
+    top: 85%;
+    left: -15%;
+  }
+  #bubble2 {
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    bottom: -220%;
+    right: -20%;
+  }
+  .education {
+    position: relative;
+    left: 10%;
+    width: 85%;
+  }
+
+  #volunteerExp {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10%;
+    width: 90%;
+  }
+  #vol-title {
+    width: 80%;
+  }
+  #vol-info {
+    width: 80%;
+  }
+  #skill {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10%;
+    width: 100%;
+  }
+  #skills-title {
+    width: 80%;
+  }
+  #skills-info {
+    width: 80%;
+  }
+  #skills-info2 {
+    position: relative;
+    left: 0%;
+    width: 80%;
+  }
+  #ref-title {
+    width: 80%;
+  }
+  #ref-info {
+    width: 80%;
+  }
+  #reference {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
 }
